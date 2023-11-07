@@ -19,11 +19,4 @@ public class Book {
     public void setYearPublication(int yearPublication){
         this.yearPublication = yearPublication;
     }
-    public void setNameBook(String nameBook){
-        this.nameBook = nameBook;
-    }
-
-    public void setAuthor(Author author) {
-        this.author = author;
-    }
 }
