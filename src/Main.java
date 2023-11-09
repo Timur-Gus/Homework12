@@ -5,5 +5,7 @@ public class Main {
         Author alexandrDuma = new Author("Александр", "Дюма");
         Book monteCristo = new Book(2012,"Граф Монте-Кристо",alexandrDuma);
         monteCristo.setYearPublication(1845);
+        System.out.println(whiteFang);
+        System.out.println(alexandrDuma);
     }
 }
