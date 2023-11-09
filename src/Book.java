@@ -24,4 +24,12 @@ public class Book {
     public String toString() {
         return "Книга: " + nameBook + ", " + yearPublication + ", автор: " + author;
     }
+    @Override
+    public boolean equals(Object other){
+        if (this.getClass() != other.getClass()) {
+            return false;
+        }
+        Book book = (Book) other;
+        return nameBook.equals(book.nameBook);
+    }
 }
