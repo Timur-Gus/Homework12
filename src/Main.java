@@ -7,5 +7,7 @@ public class Main {
         monteCristo.setYearPublication(1845);
         System.out.println(whiteFang);
         System.out.println(alexandrDuma);
+        System.out.println(whiteFang.hashCode());
+        System.out.println(alexandrDuma.hashCode());
     }
 }
