@@ -18,17 +18,15 @@ public class Author {
     }
     @Override
     public boolean equals(Object other){
-        if(this.getClass() != other.getClass()){
+        if(other == null || this.getClass() != other.getClass()){
             return false;
         }
         Author author = (Author) other;
         boolean check = name.equals(author.name) && surname.equals(author.surname);
         return check;
     }
-
     @Override
     public int hashCode() {
         return java.util.Objects.hash(name,surname);
     }
-
 }
