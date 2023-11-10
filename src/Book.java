@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 public class Book {
     private int yearPublication;
     private String nameBook;
@@ -30,7 +32,7 @@ public class Book {
             return false;
         }
         Book book = (Book) other;
-        return nameBook.equals(book.nameBook);
+        return Objects.equals(nameBook,book.nameBook);
     }
     @Override
     public int hashCode(){
